@@ -37,7 +37,8 @@ function FetchNews() {
                                         <div className="card-body">
                                             
                                             <p >{e.description}</p>
-                                            <a href={e.url} target="_blank"  className="btn btn-primary text-center">Read More</a>
+                                            <a href={e.url} target="_blank" rel="noreferrer"  className="btn btn-primary text-center">Read More</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
