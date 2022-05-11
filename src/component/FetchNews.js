@@ -1,8 +1,10 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function FetchNews() {
+    
     const [news, setNews] = useState([]);
     const fetchNews = (value) => {
         axios.get('https://newsapi.org/v2/top-headlines?country=in&apiKey=f6141f13082342d6a2d4c6321684198b')
@@ -22,9 +24,9 @@ function FetchNews() {
     return (
 
         <>
-            <button type="button" className='btn btn-primary d-none' value="" onClick={fetchNews} >Fetch News</button>
+            <button type="button" className='btn btn-outline-primary d-none' value="" onClick={fetchNews} >Fetch News</button>
 
-
+            
             <div className="container ">
                 <div className="row">
                     {
@@ -48,7 +50,7 @@ function FetchNews() {
                 </div>
             </div>
 
-
+                   
         </>
 
 
@@ -57,5 +59,5 @@ function FetchNews() {
 
 export default FetchNews;
 
-{/*  */ }
+
 
